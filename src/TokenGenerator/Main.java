@@ -30,7 +30,7 @@ public class Main {
 
 
         public int getNumberFromUser() {
-            String number;
+
             Scanner scanner = new Scanner(System.in);
             try {
                 System.out.println("Enter the number: ");

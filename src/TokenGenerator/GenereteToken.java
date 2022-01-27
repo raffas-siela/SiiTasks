@@ -4,8 +4,7 @@ import java.security.SecureRandom;
 import java.util.Random;
 
 class Program {
-    public static void main (String args[]) {
-        Random generator = new Random();
+            Random generator = new Random();
         for(int i = 0; i < 100; i++) {
             System.out.println(generator.nextInt());
         }
