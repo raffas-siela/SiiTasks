@@ -34,7 +34,7 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             try {
                 System.out.println("Enter the number: ");
-                number = scanner.nextLine();
+                int number = scanner.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("It isn't number => try again!");
                 return getNumberFromUser();
