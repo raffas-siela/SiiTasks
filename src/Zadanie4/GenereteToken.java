@@ -1,3 +1,4 @@
+/*
 package TokenGenerator;
 
 import java.security.SecureRandom;
@@ -15,4 +16,4 @@ class Program {
         random.nextBytes(values);
 
     }
-}
+}*/

@@ -1,4 +1,4 @@
-package TokenGenerator;/*
+package Zadanie4;/*
 Zaimplementuj metodę Java - genereteToken().
         1. Liczba parametrów - 1 -> długość tokena
         2. Nazwa - genereteToken()
@@ -22,7 +22,7 @@ Zaimplementuj metodę Java - genereteToken().
 */
 
 
-import java.util.InputMismatchException;
+/*import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -46,4 +46,4 @@ public class Main {
     private static int getNumberFromUser() {
         return 0;
     }
-}
+}*/
