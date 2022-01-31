@@ -22,7 +22,7 @@ public class Employee {
         return salary;
     }
     public void getAllData(){
-        System.out.println("Name and surname: " + firstName + secondName);
-        System.out.println("Salary: " + salary);
+        System.out.println("Salary for" + firstName + secondName + "is" + salary);
+
     }
 }
