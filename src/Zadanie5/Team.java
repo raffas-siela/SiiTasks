@@ -12,10 +12,10 @@ public class Team {
 
     public void addEmployee()
     {
-        System.out.println("Podaj imię i nazwisko pracownika");
+        System.out.println("Provide the name and surname of the employee:");
         String name  = scanner.nextLine();
 
-        System.out.println("wynagordzenie");
+        System.out.println("Salary");
         String salary = String.valueOf(scanner.nextInt());
 
         Employee employee = new Employee(name, salary);
