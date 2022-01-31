@@ -9,14 +9,14 @@ public class Employee {
 
     }
 
-      public String getName(){
+    public String getName(){
         return name;
     }
     public int getSalary(){
         return salary;
     }
     public void getAllData(){
-        System.out.println("Imię i nazwisko: " + name);
-        System.out.println("Wynagrodzenie: " + salary);
+        System.out.println("Name and surname: " + name);
+        System.out.println("Salary: " + salary);
     }
 }
