@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Team {
 
     private List<Employee> employees = new ArrayList<>();
-    private Map<String, List<Employee>> employeeSalary = new HashMap<String, List<Employee>>();
+    private Map<String, List<Employee>> employeeSalary = new HashMap<>();
 
     Scanner scanner = new Scanner(System.in);
 
