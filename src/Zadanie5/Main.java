@@ -55,7 +55,7 @@ public class Main {
         Team team = new Team();
 
         while (shouldContinue) {
-            System.out.println("Wybierz opcję:");
+            System.out.println("Choise:");
             System.out.println("1 - Print sum of all employees salary");
             System.out.println("2 - Display all employees data");
             System.out.println("3 – Add new employee");
