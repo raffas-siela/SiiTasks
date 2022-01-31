@@ -12,13 +12,13 @@ public class Team {
 
     public void addEmployee()
     {
-        System.out.println("Podaj imię ");
+        System.out.println("first name: ");
         String firstName = scanner.nextLine();
 
-        System.out.println("Podaj nazwisko");
+        System.out.println("second name");
         String secondName = scanner.nextLine();
 
-        System.out.println("Podaj wynagordzenie");
+        System.out.println("salary: ");
         int salary = Integer.valueOf(scanner.nextLine());
 
 
