@@ -6,31 +6,52 @@ import java.util.HashMap;
 public class Team {
 
     private List<Employee> employees = new ArrayList<>();
-    private Map<String, List<Employee>> employeeSalary = new HashMap<>();
-
+    private Set<String> meals = new HashSet<>();
+    private Map<Integer, Employee> salary = new HashMap<>();
     Scanner scanner = new Scanner(System.in);
 
     public void addEmployee()
     {
-        System.out.println("Provide the name and surname of the employee:");
-        String name  = scanner.nextLine();
+        System.out.println("Podaj imię ");
+        String firstName = scanner.nextLine();
 
-        System.out.println("Salary");
-        String salary = String.valueOf(scanner.nextInt());
+        System.out.println("Podaj nazwisko");
+        String secondName = scanner.nextLine();
 
-        Employee employee = new Employee(name, salary);
+        System.out.println("Podaj wynagordzenie");
+        int salary = Integer.valueOf(scanner.nextLine());
+
+
+
+        Employee employee = new Employee(firstName, secondName, salary);
+        meals.add(secondName);
+        this.salary.put(salary, employee);
         employees.add(employee);
-        employeeSalary.put(salary, employees);
-
 
     }
-    public void getAllinformations(){
-        for (Employee employee : employees){
-            employee.getAllData();
-            System.out.println();
+
+    public void displayMeals()
+    {
+        for (String meal : meals)
+        {
+            System.out.println(meal);
         }
     }
-    public void sumSalary(){
-        sumSalary();
+   /* public void displayEmployeeBySalary()
+    {
+        System.out.println("Podaj wynagrodzenie");
+        Integer salary = Integer.valueOf(scanner.nextLine());
+        Employee employee = salary.get(salary);
+        employee.getAllData();
+    }*/
+
+    public void displayEmployee()
+    {
+        for (Employee employee : employees)
+        {
+            employee.getAllData();
+            //pusta linia pomiędzy osobami wyśwetlonymi
+            System.out.println();
+        }
     }
 }

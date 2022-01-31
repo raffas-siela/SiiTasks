@@ -64,8 +64,8 @@ public class Main {
             int userChoise = scanner.nextInt();
 
             switch (userChoise){
-                case 1 -> team.sumSalary();
-                case 2 -> team.getAllinformations();
+                //case 1 -> team.displayEmployeeBySalary();
+                case 2 -> team.displayEmployee();
                 case 3 -> team.addEmployee();
                 case 4 -> shouldContinue = false;
             }
