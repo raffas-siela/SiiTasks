@@ -45,9 +45,30 @@
 
         P.S. Jeżeli uznasz za stosowne stworzenie więcej klas niż samą klasę ‘Employee’ aby rozwiązać to zadanie,
         to śmiało możesz tak zrobić.*/
+package Zadanie5;
+import java.util.Scanner;
 
-public class Zadanie5 {
+public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean shouldContinue = true;
+        Team team = new Team();
 
+        while (shouldContinue) {
+            System.out.println("Wybierz opcję:");
+            System.out.println("1 - Print sum of all employees salary");
+            System.out.println("2 - Display all employees data");
+            System.out.println("3 – Add new employee");
+            System.out.println("4 – End program");
+
+            int userChoise = scanner.nextInt();
+
+            switch (userChoise){
+                case 1 -> team.sumSalary();
+                case 2 -> team.getAllinformations();
+                case 3 -> team.addEmployee();
+                case 4 -> shouldContinue = false;
+            }
+        }
     }
 }
