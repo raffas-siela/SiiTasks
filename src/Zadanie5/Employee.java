@@ -2,11 +2,10 @@ package Zadanie5;
 
 public class Employee {
     private String name;
-    private int salary;
+    private Integer salary;
 
     public Employee(String name, String salary){
         this.name = name;
-
     }
 
     public String getName(){

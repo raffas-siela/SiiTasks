@@ -22,6 +22,7 @@ public class Team {
         employees.add(employee);
         employeeSalary.put(salary, employees);
 
+
     }
     public void getAllinformations(){
         for (Employee employee : employees){
